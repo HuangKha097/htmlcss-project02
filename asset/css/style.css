@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.content {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+:root{
+    --primary-color:  #FFB900;
+}
+/* ====== common ====== */
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    min-width: 118px;
+    min-height: 50px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #171100;
+    text-align: center;
+    
+}
+
+/* ====== Header ====== */
+.hero-wrap{
+    background: #FFFCF4;
+    padding-top: 36px;
+    display: flex;
+}
+
+.hero-wrap .navbar{
+    display: flex;
+    width: 1170px;
+    height: 50px;
+    flex-shrink: 0;
+}
+.hero-wrap .logo{
+    color: #171100;
+    font-family: "Sen";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41;
+}
+
+.hero-wrap .dot{
+    margin-right: 512px;
+    color: #FFB900;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+
+}
+
+.hero-wrap .menu {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.hero-wrap .menu a{
+    color: #5F5B53;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+.hero-wrap .sign-up{
+
+margin-left: 70px;
+
+}.hero-wrap .sign-up a{
+    padding: 11px 41px;
+    border-radius: 24.5px;
+    width: 144px;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.hero-wrap .body{
+    display: flex;
+    justify-content: space-between;
+}
+.body .banner img{
+    width: 470px;
+    height: 685px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.body .banner {
+    position: relative;
+}
+.body .banner .card{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    bottom: 48px;
+    left: 300px;
+    z-index: 1;
+    width: 270px;
+    height: 244px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.banner .row:first-child{
+    margin-top: 0;
+}
+.banner .row{
+    display: flex;
+    margin-top: 14px;
+}
+.banner .row .icon img{
+    width: 48px;
+    height: 48px;
+}
+.banner .info{
+    margin-left: 16px;
+}
+.banner .card .desc{
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.88;
+}
+.banner .card h3{
+    color: #171100;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+.body{
+    margin-top: 64px;
+}
+.body .sub-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.body .sub-content .title{
+    width: 470px;
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+}
+.body .sub-content .desc {
+    margin-top: 22px;
+    width: 470px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+.btn-group{
+    margin-top: 38px;
+    display: flex;
+    text-align: center;
+}
+
+.btn-group .see-courses{
+    margin-right: 28px;
+    padding: 17px 33px;
+    width: 180px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: var(--primary-color);
+
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+.btn-group .see-courses a{
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.btn-group .watch-video{
+    display: flex;
+    align-content: center;
+}
+.qty-row{
+    padding-top: 48px;
+}
+.qty-row .info{
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    gap: 10px;
+    padding-right: 28px;
+}
+.qty-row .row-num {
+    padding-top: 8px;
+    display: flex;
+}
+
+.qty-row >span{
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.qty-row .info .count{
+   
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.23;
+}
+.qty-row .info .desc-count {
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 30px;
+}
