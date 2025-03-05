@@ -17,26 +17,28 @@
     <title>Project 2</title>
 </head>
 <body>
-    <main style="height: 5000px">
+    <main style="height: 10000px;">
+        <div class="content">
+            <div class="navbar fixed">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./asset/img/logo.svg" alt="logo">
+            </div>
+            <!-- Nav -->
+            <nav class="nav">
+                <ul>
+                <li class="active"><a href="#!">Home</a></li>
+                <li><a href="#!">Courses</a></li>
+                <li><a href="#!">Pricing</a></li>
+                <li><a href="#!">Reviews</a></li>
+            </ul>
+            </nav>
+            <!-- Action -->
+            <div class="action"><a href="#!" class="btn sign-up-btn" >Sign UP</a></div>
+        </div>
+    </div>
         <header class="hero-wrap">
             <div class="content">
-                <div class="navbar fixed">
-                    <!-- Logo -->
-                    <div class="logo">
-                        <img src="./asset/img/logo.svg" alt="logo">
-                    </div>
-                    <!-- Nav -->
-                    <nav class="nav">
-                        <ul>
-                        <li class="active"><a href="#!">Home</a></li>
-                        <li><a href="#!">Courses</a></li>
-                        <li><a href="#!">Pricing</a></li>
-                        <li><a href="#!">Reviews</a></li>
-                    </ul>
-                    </nav>
-                    <!-- Action -->
-                    <div class="action"><a href="#!" class="btn sign-up-btn" >Sign UP</a></div>
-                </div>
                 <div class="body">
                 <div class="banner"><img src="./asset/img/guy-banner.jpg" alt="guy-banner">
                     <div class="card">
@@ -69,7 +71,7 @@
                     <div class="btn-group">
                         <div class="btn see-courses"><a href="#!">See Courses</a></div>
                         
-                        <div class="watch-video"><a href="#!"><img src="./asset/img/watch-video-group.svg" alt="watch video"></a></div>
+                        <div class="watch-video"><button><img src="./asset/img/watch-video-group.svg" alt="watch video"></button></div>
                        
                     </div>
                     <div class="qty-row">
@@ -89,6 +91,57 @@
             </div>
             </div>
         </header>
+        <!-- Popular -->
+        <div class="popular">
+            <div class="content">
+                <div class="title">
+                    <h2>Our popular courses</h2>
+                </div>
+                <div class="row">
+                    <p class="desc">Build new skills with new trendy courses and shine for the next future career.</p>
+                    <div class="arrow-group">
+                        <div class="arrow"><button><img src="./asset/img/arrow_left.svg" alt="arrow left"></button></div>
+                        <div class="arrow"><button><img src="./asset/img/arrow_right.svg" alt="arrow right"></button></div>
+                    </div>
+                </div>
+                <!-- popular Card -->
+                <div class="card-group">
+                    <div class="card">
+                        <img src="./asset/img/card1.jpg" alt="Basic web design">
+                        <div class="infor">
+                            <h3 class="sub-title">Basic web design</h3>
+                        <p class="desc">Get the best course, gain knowledge and shine for your future career.</p>
+                        <div class="action">
+                            <span class="price">$120.75</span>
+                            <div class="btn book-now"><a href="#!">Book Now</a></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./asset/img/card2.jpg" alt="UI/UX design">
+                        <div class="infor">
+                        <h3 class="sub-title">UI/UX design</h3>
+                        <p class="desc">Get the best course, gain knowledge and shine for your future career.</p>
+                        <div class="action">
+                            <span class="price">$120.75</span>
+                            <div class="btn book-now"><a href="#!">Book Now</a></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./asset/img/card3.jpg" alt="Web App design">
+                        <div class="infor">
+                        <h3 class="sub-title">Web App design</h3>
+                        <p class="desc">Get the best course, gain knowledge and shine for your future career.</p>
+                        <div class="action">
+                            <span class="price">$120.75</span>
+                            <div class="btn book-now"><a href="#!">Book Now</a></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
