@@ -44,9 +44,26 @@ a{
 .btn:hover{
     opacity: 0.9;
 }
+.title {
+    color: #171100;
+    font-family: Sen;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.title.lv1{
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+
+.title.lv2{
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
 
 /* ====== Header ====== */
 .hero-wrap{
+    padding: 56px 0px 65px;
     background: #FFFCF4;
     display: flex;
 }
@@ -122,24 +139,19 @@ a{
 .body .home-picture img{
     width: 470px;
     height: 685px;
-    flex-shrink: 0;
-    border-radius: 20px;
     object-fit: cover;
+    border-radius: 20px;
+    display: block;
 }
 .body .home-picture {
     position: relative;
 }
-.body .home-picture .card{
+.hero-wrap .body .card{
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 24px;
+    padding: 24px 0 24px 24px;
     bottom: 48px;
-    left: 300px;
-    z-index: 1;
+    left: 330px;
     width: 270px;
-    height: 244px;
     border-radius: 12px;
     background: #fff;
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
@@ -150,11 +162,13 @@ a{
 }
 .home-picture .row{
     display: flex;
+    align-items: center;
     margin-top: 14px;
 }
 .home-picture .row .icon img{
     width: 48px;
     height: 48px;
+ 
 }
 .home-picture .info{
     margin-left: 16px;
@@ -177,22 +191,13 @@ a{
 }
 .body .sub-content{
     display: flex;
+    max-width: 470px;
     justify-content: center;
     flex-direction: column;
-   
 }
-.body .sub-content .title{
-    width: 470px;
-    color: #171100;
-    font-family: Sen;
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: -1.16px;
-}
+
 .body .sub-content .desc {
     margin-top: 22px;
-    width: 470px;
     color: #5F5B53;
     font-size: 1.8rem;
     font-weight: 400;
@@ -256,7 +261,6 @@ a{
 }
 
 .qty-row .info .count{
-   
     color: #171100;
     font-family: Sen;
     font-size: 4.4rem;
@@ -273,7 +277,8 @@ a{
 
 /* ==========Popular============ */
 .popular{
-    margin-top: 200px;
+    margin-top: 135px;
+    padding: 65px 0;
 }
 .popular .row{
     margin-top: 16px;
@@ -284,13 +289,7 @@ a{
     padding: 16px 22px 22px 22px;
    
 }
-.popular .title:nth-child(1){
-    color: #171100;
-    font-family: Sen;
-    font-size: 3.8rem;
-    font-weight: 700;
-    line-height: 1.26;
-}
+
 .popular .row .desc{
     width: 458px;
     color: #5F5B53;
@@ -299,11 +298,24 @@ a{
     font-weight: 400;
     line-height: 1.67;
 }
-.popular .arrow-group .arrow button{
-    border: none;
+.popular .arrow-group{
+    gap: 18px;
+}
+.popular .arrow-group .shevron button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 50%;
     background: transparent;
+}
+.popular .arrow-group .shevron button:hover{
+    color: #fff;
+    background: var(--primary-color);
     cursor: pointer;
-    
 }
 .popular .row .arrow-group{
     max-width:98px;
