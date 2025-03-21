@@ -562,9 +562,12 @@ a{
 .blog-block .body .card-group .card{
     width: 370px;
     height: 466px;
-    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
     border-radius: 16px;
     background: #fff;
+}
+.blog-block .body ,.card-group .card:hover{
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+
 }
 
 .blog-block .header{
